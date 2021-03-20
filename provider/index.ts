@@ -7,7 +7,7 @@ interface TestProviderArgs {
 class TestResourceProvider implements pulumi.dynamic.ResourceProvider {
   async create(input: TestProviderArgs): Promise<pulumi.dynamic.CreateResult> {
     const outs = {
-      seralized: input.serialized ?? true,
+      seralized: true,
     };
 
     console.log("State after Create", outs);
@@ -47,7 +47,7 @@ class TestResourceProvider implements pulumi.dynamic.ResourceProvider {
     news: TestProviderArgs
   ): Promise<pulumi.dynamic.UpdateResult> {
     const outs = {
-      serialized: news.serialized ?? true,
+      serialized: true
     };
 
     console.log("Outs after Update", outs);

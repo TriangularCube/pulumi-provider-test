@@ -1,0 +1,9 @@
+{
+    "name": "pulumi-serialize-test",
+    "devDependencies": {
+        "@types/node": "^14.14.35"
+    },
+    "dependencies": {
+        "@pulumi/pulumi": "^2.0.0"
+    }
+}
